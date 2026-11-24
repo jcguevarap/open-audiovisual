@@ -598,7 +598,7 @@
           }
         }
       ],
-      "next": "06-cylinder-earth",
+      "next": "28-jellyfish-chords",
       "credit": {
         "home": false,
         "en": "Branch language © Che-Yu Wu, <cite>The Last Input</cite>, 2026",
@@ -608,6 +608,97 @@
           "zh": "在這裡當作示範，版權所有。框架採 MIT 授權。"
         }
       }
+    },
+    {
+      "id": "28-jellyfish-chords",
+      "num": "28",
+      "dir": "examples/28-jellyfish-chords/",
+      "route": "inputs",
+      "title": {
+        "en": "Jellyfish bloom",
+        "zh": "水母綻放"
+      },
+      "teaches": {
+        "en": "A world written from one sentence: consonant chords make the swarm bloom, dissonance makes it flinch and go dark.",
+        "zh": "從一句話寫出的世界：協和的和弦讓水母群綻放，不協和讓它們縮起、熄燈。"
+      },
+      "summary": {
+        "en": "A world written from one sentence: consonant chords make the swarm bloom, dissonance makes it flinch and go dark. Every knob is a param in <code>main.js</code>.",
+        "zh": "從一句話寫出的世界：協和的和弦讓水母群綻放，不協和讓它們縮起、熄燈。每個旋鈕都是 <code>main.js</code> 裡的參數。"
+      },
+      "plays": {
+        "en": "on-screen piano · QWERTY · simulated performer",
+        "zh": "螢幕鋼琴 · 電腦鍵盤 · 模擬演奏者"
+      },
+      "needs": [],
+      "standIn": [
+        "piano",
+        "qwerty",
+        "sim"
+      ],
+      "p5Line": false,
+      "thumb": "assets/home/works/28.webp",
+      "alt": {
+        "en": "Glowing blue and violet jellyfish with long thin tentacles drifting in dark water under faint light shafts.",
+        "zh": "發著藍紫色光的水母拖著細長觸手，漂在微弱光束下的深色海水裡。"
+      },
+      "docs": [
+        {
+          "id": "writing-a-world",
+          "en": "Writing a world",
+          "zh": "寫一個世界"
+        },
+        {
+          "id": "inputs-chords",
+          "en": "Chords",
+          "zh": "和弦"
+        }
+      ],
+      "tryThree": {
+        "en": [
+          "Play single notes: a jellyfish rises where each pitch sits.",
+          "Play a triad: every bell lights up in the root’s colour and the swarm swims in unison.",
+          "Play a cluster of adjacent keys: the lights go out and the bells sink, then slowly recover."
+        ],
+        "zh": [
+          "彈單音：每個音高的位置浮起一隻水母。",
+          "彈一個三和弦：每個傘蓋都亮成根音的顏色，整群一起游動。",
+          "彈幾個相鄰的琴鍵（音堆）：燈光熄滅，傘蓋下沉，再慢慢恢復。"
+        ]
+      },
+      "read": [
+        {
+          "file": "main.js",
+          "from": 153,
+          "to": 162,
+          "match": "params: [",
+          "note": {
+            "en": "Params: pulse, current, glow, colour, tentacles, snow, population.",
+            "zh": "參數：脈動、洋流、光暈、顏色、觸手、海雪、數量。"
+          }
+        },
+        {
+          "file": "main.js",
+          "from": 171,
+          "to": 171,
+          "match": "signals.on('chord/event'",
+          "note": {
+            "en": "The world subscribes to chord events, not to keys.",
+            "zh": "世界訂閱的是和弦事件，不是琴鍵。"
+          }
+        },
+        {
+          "file": "main.js",
+          "from": 197,
+          "to": 217,
+          "match": "onChord(a) {",
+          "note": {
+            "en": "A triad blooms, a tritone flinches, a cluster puts the lights out.",
+            "zh": "三和弦綻放，三全音讓牠們縮起，音堆讓燈熄滅。"
+          }
+        }
+      ],
+      "next": "06-cylinder-earth"
     },
     {
       "id": "06-cylinder-earth",
